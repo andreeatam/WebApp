@@ -1,0 +1,57 @@
+<h2 class="text-center">Lasa un review despre experienta ta la Untold!</h2>
+
+<div class="container">
+<section>
+    <mat-form-field class="example-form-field">
+      <mat-label>Enter your first name</mat-label>
+      <input matInput type="text" [(ngModel)]="newFirstName">
+      <button *ngIf="inputValue" matSuffix mat-icon-button aria-label="Clear" (click)="inputValue=''">
+      <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+
+    <mat-form-field class="example-form-field">
+      <mat-label>Enter your second name</mat-label>
+      <input matInput type="text" [(ngModel)]="newSecondName">
+      <button *ngIf="inputValue" matSuffix mat-icon-button aria-label="Clear" (click)="inputValue=''">
+      <mat-icon>close</mat-icon>
+      </button>
+      </mat-form-field>
+    </section>
+</div>
+
+<div class="container">
+<section>
+    <mat-form-field class="example-form-field">
+        <mat-label>Enter your email</mat-label>
+        <input matInput type="text" [(ngModel)]="newEmail">
+        <button *ngIf="inputValue" matSuffix mat-icon-button aria-label="Clear" (click)="inputValue=''">
+        <mat-icon>close</mat-icon>
+        </button>
+    </mat-form-field>
+
+    <mat-form-field class="example-form-field">
+        <mat-label>Enter the year for review </mat-label>
+        <input matInput type="text" [(ngModel)]="newYear">
+        <button *ngIf="inputValue" matSuffix mat-icon-button aria-label="Clear" (click)="inputValue=''">
+         <mat-icon>close</mat-icon>
+         </button>
+    </mat-form-field>
+</section>
+</div>
+
+<div class="container">
+<section>
+    <mat-form-field class="example-form-field">
+        <mat-label>Enter your review </mat-label>
+        <input matInput type="text" [(ngModel)]="newReview">
+        <button *ngIf="inputValue" matSuffix mat-icon-button aria-label="Clear" (click)="inputValue=''">
+        <mat-icon>close</mat-icon>
+        </button>
+        </mat-form-field>
+
+    <button (click)="sendPersonReview()" (click)="showMessage() " mat-raised-button>Send Review!</button>
+
+</section>
+</div>
